@@ -1,0 +1,29 @@
+function palindrome(str) {
+  // Good luck!
+  /*var a = str.toLowerCase();
+  var a = a.split("");
+  var a = a.reverse(",");
+  var b = a.join("");*/
+  var a = str.toLowerCase();
+  var a = a.replace(/\s/gi,"");
+  console.log(a);
+
+  var b = a.split("");
+  var b = b.reverse(",");
+  var b = b.join("");
+  if(a == b){
+    console.log("true");
+   // console.log(b);
+  }else{
+    console.log("false");
+  }
+  
+}
+palindrome("A man a plan a canal Panama");
+
+
+/*var a = str.toLowerCase();
+
+var b = a.split("");
+var b = b.reverse(",");
+var b = b.join("");*/
