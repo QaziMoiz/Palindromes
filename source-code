@@ -5,7 +5,10 @@ function palindrome(str) {
   var a = a.reverse(",");
   var b = a.join("");*/
   var a = str.toLowerCase();
-  var a = a.replace(/\s/gi,"");
+  //var a = a.replace(/([*@!$%#+=._-])/g,"");
+  var a = a.replace(/\s+|([*)(:/,@!$%#+=._-])/gi,"");
+  
+  
   console.log(a);
 
   var b = a.split("");
@@ -19,7 +22,7 @@ function palindrome(str) {
   }
   
 }
-palindrome("A man a plan a canal Panama");
+palindrome("0_0 (: /-\ :) 0-0");
 
 
 /*var a = str.toLowerCase();
